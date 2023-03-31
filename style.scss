@@ -9,15 +9,15 @@ main{
         font-size: 20px;
     }
     p.hiddenp{
-        display: none;
+        transition: opacity 2s;
+        opacity: 0;
     }
 }
 
 main:hover{
     box-shadow: 12px 12px 2px 1px black;
     p.hiddenp{
-        display: inline-block;
-        visibility: visible;
+        opacity: 1;
     }
     .part1{
         height: 100px;
@@ -79,4 +79,13 @@ main:hover{
     display: inline-block;
     position: relative;
     margin-top: -30px;
+}
+
+footer{
+    position: absolute;
+    bottom: 100px;
+    background-color: lightgrey;
+    width: 400px;
+    text-align: center;
+    
 }
